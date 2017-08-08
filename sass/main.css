@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
 /*
 	Phantom by HTML5 UP
 	html5up.net | @n33co
@@ -1231,7 +1231,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #585858;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.75; }
@@ -1252,7 +1252,7 @@ a {
   border-bottom: dotted 1px rgba(88, 88, 88, 0.5); }
   a:hover {
     border-bottom-color: transparent;
-    color: #005E61 !important; }
+    color: #9A4422 !important; }
 
 strong, b {
   font-weight: 900; }
@@ -1282,10 +1282,11 @@ h1 {
       font-size: 1.75em; } }
 
 h2, h3, h4, h5, h6 {
+  font-family: "Over the Rainbow", cursive;
   font-weight: 900;
   line-height: 1.5;
   margin: 0 0 2em 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.35em; }
   h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit; }
@@ -2478,7 +2479,7 @@ button,
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
-  text-transform: uppercase;
+  text-transform: lowercase;
   white-space: nowrap; }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
@@ -2730,7 +2731,7 @@ button,
     font-weight: 900;
     letter-spacing: 0.35em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     display: inline-block; }
   .archives ul.archive-list {
     list-style-type: none; }
@@ -2777,7 +2778,7 @@ button,
   position: fixed;
   z-index: 10000;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: rgba(0, 94, 97, 0.97);
   padding: 1em 0;
   -moz-transition: padding 0.45s ease;
   -webkit-transition: padding 0.45s ease;
@@ -2808,11 +2809,11 @@ button,
   #header .logo {
     display: block;
     border-bottom: 0;
-    color: inherit;
-    font-weight: 900;
+    color: white;
+    font-family: "Over the Rainbow", cursive;
     letter-spacing: 0.35em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     display: inline-block;
     -moz-flex: 1;
     -webkit-flex: 1;
@@ -2822,7 +2823,7 @@ button,
       display: inline-block;
       vertical-align: middle; }
     #header .logo .symbol {
-      margin-right: 0.65em; }
+      margin-right: 0.3em; }
       #header .logo .symbol img {
         display: block;
         width: 2em;
@@ -2843,11 +2844,13 @@ button,
       margin: 0;
       padding: 0; }
       #header nav ul li {
+        font-family: "Over the Rainbow", cursive;
         display: block;
         padding: 0; }
         #header nav ul li a {
           display: block;
           position: relative;
+          color: rgba(255, 255, 255, 0.75);
           height: 3em;
           line-height: 3em;
           padding: 0 1.5em;
@@ -2855,8 +2858,8 @@ button,
           border: 0;
           font-size: 0.8em;
           font-weight: 900;
-          letter-spacing: 0.35em;
-          text-transform: uppercase; }
+          letter-spacing: 0.2em;
+          text-transform: lowercase; }
         #header nav ul li a[href="#menu"] {
           -webkit-tap-highlight-color: transparent;
           width: 4em;
