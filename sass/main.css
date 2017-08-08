@@ -2823,7 +2823,8 @@ button,
       display: inline-block;
       vertical-align: middle; }
     #header .logo .symbol {
-      margin-right: 0.3em; }
+      margin-right: 0.3em;
+      font-size: 1.3em; }
       #header .logo .symbol img {
         display: block;
         width: 2em;
