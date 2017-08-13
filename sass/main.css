@@ -2400,13 +2400,10 @@ input[type="radio"] + label:before {
       width: 100%; }
   .image.main {
     display: block;
-    margin: 0 0 3em 0;
+    margin: 0 0 0.5em 0;
     width: 100%; }
     .image.main img {
       width: 100%; }
-    @media screen and (max-width: 736px) {
-      .image.main {
-        margin: 0 0 2em 0; } }
 
 /* Table */
 .table-wrapper {
