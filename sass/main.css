@@ -2372,6 +2372,9 @@ input[type="radio"] + label:before {
     padding: 0; }
 
 /* Image */
+img {
+  max-width: 100%; }
+
 .image {
   border-radius: 4px;
   border: 0;
