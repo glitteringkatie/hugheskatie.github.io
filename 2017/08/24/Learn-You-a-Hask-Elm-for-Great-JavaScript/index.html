@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!--Description-->
+    
+        <meta name="description" content="How Haskell and Elm helped my day-to-day JavaScript">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Katie Hughes">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Learn You a Hask/Elm for Great JavaScript"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Katie Hughes"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="https://images.unsplash.com/photo-1453733190371-0a9bedd82893" />
+    
+
+    <!-- Title -->
+    
+    <title>Learn You a Hask/Elm for Great JavaScript - Katie Hughes</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62083781-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol">✨</span><span class="title">Katie Hughes</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul class='nav-large'>
+                
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">Archives</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://katelhughes.com/">More</a>
+                    </li>
+                
+            </ul>
+            <ul class='nav-small'>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="http://katelhughes.com/">More</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1 class="splash-title" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1453733190371-0a9bedd82893)">Learn You a Hask/Elm for Great JavaScript</h1>
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p><a style="background-color:#585858;color:white;text-decoration:none;padding:4px 6px;font-size:12px;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@roman_lazygeek?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Roman Mager"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewbox="0 0 32 32"><title/><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"/></svg></span><span style="display:inline-block;padding:2px 3px;">Photo by Roman Mager</span></a></p>
+<p>Programming Language Fundamentals in college introduced me to <a href="https://www.haskell.org/" target="_blank" rel="external">Haskell</a> and I was hooked. It was my first taste at the functional paradigm and everything I did felt like solving a riddle. Haskell made me feel clever and while programming shouldn’t be <em>all</em> solving riddles, it is sure fun to feel clever. I gushed about Haskell to a friend who knew I liked frontend development and he suggested <a href="http://elm-lang.org/" target="_blank" rel="external">Elm</a>. I looked that up real quick and then had a hard time paying attention in my Haskell class because I was having a blast with Elm.</p>
+<p>Eventually I graduated and started working at AppNexus and for my goals at work I focused on Elm for a quarter and read <a href="http://learnyouahaskell.com/" target="_blank" rel="external">Learn You a Haskell for Great Good</a> for a quarter—both to better learn functional programming. But let’s be honest it was to scratch this itch I had for these languages. Or at least that’s how it started. Unbeknownst to me I was learning Haskell and Elm for great JavaScript.</p>
+<p>At my job we use <a href="https://facebook.github.io/react/" target="_blank" rel="external">React</a> and <a href="http://redux.js.org/" target="_blank" rel="external">Redux</a>—when I first started learning Redux I had a really hard time primarily because of the language around it. Wtf were reducers and dispatchers and why were actions not taking action? The names didn’t make sense to me and didn’t hold meaning to me so I had a rough time trying to keep it all straight in my head. Learning Elm was really valuable here because Redux’s architecture was inspired by Elm’s architecture. Redux has <code>actions</code> that get sent to <code>reducers</code> that change your app’s <code>state</code>; Elm has <code>messages</code> that get sent to <code>updates</code> that change your app’s <code>model</code>. Learning this pattern with the (natural) language that Elm had as opposed to Redux’s helped me immensely. I could understand what a <code>message</code> was and wasn’t confused why it wasn’t taking action. <code>Update</code> is a word I use in my personal lexicon far more than <code>reduce</code>. To be fair, <code>state</code> and <code>model</code> were pretty 50/50 for me.</p>
+<p>Going through Learn you a Haskell actually helped me get to know lodash better. As I learned more about the core Haskell library functions I would check out lodash and try to figure out its equivalent. Sometimes I would even pseudo javascript out the lesson I had to do in Haskell to try on different hats while learning. For example, Haskell helped lodash’s reduce really click. I had a hard time remembering that function and why to use it but then when I was doing a lesson involving folding, I realized “Hey, this is just reduce!” This is another example where word choice affected my understanding—“folding” makes me think of when you lightly mix things in cooking so I had that visual cue to remember what it was called whereas <code>reduce</code> doesn’t really give me that memory cue.</p>
+<p>And then just in general, working through Elm and Haskell helped me be more conscious in JavaScript. Since both languages are pretty minimal on parentheses, I started focusing more on readability and noting what I liked, what I didn’t like, and what seemed the most clear. I was more conscious about side effects and how we could keep functions as pure as possible. Type systems became even more my jam than they were before. And finally I just learned how to think functionally and how to keep those functional tools within reach so they could be part of muscle memory.</p>
+<p>Part way through this I did stop and start wondering what I’m even doing and why. It’s not like I’m writing Haskell day to day. I wrote a scrabblizer that takes a message and translates it to the scrabble emoji code for slack but that’s about it. But then I just reminded myself that 1) I’m doing it because I just genuinely think these languages are fun and 2) they are teaching me lessons I can take elsewhere.</p>
+<p>Now I’m not saying YOU should go out and learn Haskell and Elm for great Javascript. Learn the languages you want to learn—lessons are agnostic of language and sometimes the words behind things click better for some people over others. If you’re studying some weird language, think about the patterns you are using and how their word choice could be better or how it is helping you learn better. It’s really interesting thinking about what languages have baked in and how that changes how you approach and understand problems.</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/haskell/" class="button small">haskell</a> <a href="/tags/elm/" class="button small">elm</a> <a href="/tags/functional-programming/" class="button small">functional programming</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                Katie Hughes is a software developer in Oregon who finds programming languages, interior design, and comics rad.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                    <li><a href="https://twitter.com/katieslynnh" class="icon style2 fa-twitter" target="_blank" ><span class="label">Twitter</span></a></li>
+                
+                
+                
+                    <li><a href="https://www.instagram.com/katelhughes/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/hugheskatie" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                
+                    <li><a href="\atom.xml" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Katie Hughes 2017. All rights reserved</li>
+            <li>Styles: Altered <a href="https://github.com/klugjo/hexo-theme-phantom">Hexo Theme Phantom</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
